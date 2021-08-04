@@ -13,11 +13,12 @@ gmdf = gmdf.rename(columns = {'If you aren\'t on the newsletter and would like t
 gmdf['Last Name'] = gmdf['Last Name'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
 gmdf['First Name'] = gmdf['First Name'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
 gmdf['newsletter'] = gmdf['newsletter'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
+# if the newsletter has no '@' in it, then it isn't an email and we turn the cell into nan
+gmdf['newsletter'] = gmdf['newsletter'].apply(lambda x: str(x) if '@' in str(x) else np.nan)
 
 logdf['Last Name'] = logdf['Last Name'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
 logdf['First Name'] = logdf['First Name'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
 logdf['Email Address'] = logdf['Email Address'].apply(lambda x: x if pd.isnull(x) else str(x).lower().strip())
-
 
 # iterate through all the last names and add one to their GM points count
 for i in range(len(gmdf['Last Name'])):
@@ -29,5 +30,9 @@ for i in range(len(gmdf['Last Name'])):
             # check if last and first name at the index is in logdf 
             for j in range(len(logdf['Last Name'])):
                 if (gmdf['Last Name'][i] == logdf['Last Name'][j]) and (gmdf['First Name'][i] == logdf['First Name'][j]):
-                    #print(gmdf['Last Name'][i], " is matched by j value of ", j)   # this prints the index of matched names
+                    #print(gmdf['Last Name'][i], "is matched by j value of ", j)   # this prints the index of matched names
                     logdf['Meetings'][j] += 1
+                    # adds newsletter email into logdf if the cell isn't nan
+                    if not pd.isnull(gmdf['newsletter'][i]):
+                        logdf['Email Address'][j] = gmdf['newsletter'][i]
+                    
