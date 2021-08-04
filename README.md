@@ -5,4 +5,4 @@
 
 # Collection and Cleaning
 *   Collected data from UT Habitat for Humanity's previous year's database
-*   Lowered and Stripped every Last Name, First Name, and Email address and passed through null dividers
+*   Lowered and stripped every Last Name, First Name, and Email address and passed through null dividers
