@@ -4,6 +4,10 @@
 *  Iterated through the GM sign in dataset and automatically updated the Points Log dataset when first and last names matched
 *  Added new members' emails to the Points Log
 
+# Code and Resources Used
+**Python Version:** 3.8\
+**Packages:**   pandas, numpy
+
 # Collection and Cleaning
 *   Collected data from UT Habitat for Humanity's database
 *   Lowered and stripped every Last Name, First Name, and Email address and passed through null dividers
