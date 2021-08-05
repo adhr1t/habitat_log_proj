@@ -5,5 +5,5 @@
 *  Added new members' emails to the Points Log
 
 # Collection and Cleaning
-*   Collected data from UT Habitat for Humanity's previous year's database
+*   Collected data from UT Habitat for Humanity's database
 *   Lowered and stripped every Last Name, First Name, and Email address and passed through null dividers
