@@ -12,4 +12,4 @@
 *   Collected data from UT Habitat for Humanity's database
 *   Lowered and stripped every Last Name, First Name, and Email address and passed through null dividers
 
-This project will optimize a lengthy, repetitive task for UT Habitat Officers for years to come. It will allow more time to be allotted to creativity and actual home building. This was a fun project for me because I can directly apply my skills to something that is extremely close to my heart.
+This project will optimize a lengthy, repetitive task for UT Habitat Officers for years to come. It will allow for more time to be allotted to creativity and actual home building. This was a valuable project for me because I could directly apply my skills to something that is extremely close to my heart.
