@@ -1,4 +1,4 @@
-# Habitat for Humanity UT Campus Chapter Point Log Update Automation: Project Overview
+# UT Habitat for Humanity Point Log Update Automation: Project Overview
 *   Created a tool that automates the update of the UT Habitat for Humanity Points Log
 *   Manipulated the datasets to translate data better between the two
 *  Iterated through the GM Sign-In dataset and automatically updated the Points Log dataset when first and last names matched
