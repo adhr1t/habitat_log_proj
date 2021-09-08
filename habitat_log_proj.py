@@ -59,5 +59,5 @@ logdf = logdf.sort_values('First Name')
                 
                 
 # a test of adding a new entry/member
-df3 = {'Last Name': 'juice', 'First Name': 'carrot', 'newsletter': 'carrotjuice@gmail.com'}
-gmdf = gmdf.append(df3, ignore_index = True)
+#df3 = {'Last Name': 'juice', 'First Name': 'carrot', 'newsletter': 'carrotjuice@gmail.com'}
+#gmdf = gmdf.append(df3, ignore_index = True)
