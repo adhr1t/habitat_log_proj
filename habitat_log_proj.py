@@ -41,7 +41,7 @@ for i in range(len(gmdf['Last Name'])):
             
             # checks logdf for Last Names in gmdf that don't exist yet
             for k in range(len(logdf['Last Name'])):
-                if gmdf['Last Name'][i] not in logdf['Last Name'][k]: pass
+                if gmdf['Last Name'][i] not in logdf['Last Name'][k]: continue
                 else: break
         
             # if the for loop reached the end of the Last Names in logdf, we know the gmdf Last Name has no match, so we append to the end of logdf
