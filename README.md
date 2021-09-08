@@ -5,7 +5,7 @@
 *   Gives existing members one Meeting point after attending their first meeting
 *   Automatically adds new members to the Points Log dataset; assigns them one Meeting point
 *   Automatically adds new members' emails to the Points Log dataset
-*   Alphabetically orders the dataset so the information can be used to update the Points Log with ease   
+*   Alphabetically orders the Points Log dataset so the information can be used to update the UT Habitat for Humanity database with ease   
 
 # Code and Resources Used
 **Python Version:** 3.8\
