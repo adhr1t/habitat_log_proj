@@ -2,6 +2,7 @@
 *   Created a tool that automates the update of the UT Habitat for Humanity Points Log
 *   Manipulated the datasets to translate data better between the two
 *  Iterated through the GM Sign-In dataset and automatically updated the Points Log dataset when first and last names matched
+*  Automatically adds new members to the Points Log dataset; assigns them one Meeting point
 *  Automatically adds new members' emails to the Points Log dataset
 
 # Code and Resources Used
